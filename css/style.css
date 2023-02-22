@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ****************** header ********************** */
+
+header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* ******************** main  *********************** */
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carta{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.carta p{
+    align-self: center;
+    margin-top: 30px;
+    width: 40%;
+}
+
+.carta img{
+    width: 576px;
+    display: flex;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+label{
+    font-weight: bolder;
+}
+
+input{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 10px;
+    margin: 5px;
+    
+}
+
+button{
+    color: white;
+    background-color: rgb(87, 85, 85) ;
+    width: 500px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+h4{
+    margin-top: 10px;
+    color: rgb(237, 16, 16);
+}
+
+
+ /* ******************* footer ********************** */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+/* ******************** media queryes ******************* */
+
+@media (max-width: 1200px){
+
+    .galeria{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .galeria img{
+        width: 50%;
+    }
+
+
+    .carta img{
+        margin-top: 10px;
+        width: 50%;
+        display: flex;
+        align-self: center;
+    }
+}
+
+@media (max-width: 992px){
+
+    .galeria{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .galeria img{
+        width: 50%;
+    }
+
+    .carta img{
+        margin-top: 10px;
+        width: 50%;
+        display: flex;
+        align-self: center;
+    }
+
+}
+
+@media (max-width: 768px){
+
+
+    
+    .galeria{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .galeria img{
+        width: 100%;
+    }
+
+    .carta img{
+        margin-top: 10px;
+        width: 70%;
+        display: flex;
+        align-self: center;
+    }
+
+    }
+
+@media (max-width: 576px){
+
+
+    
+    .galeria{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .carta img{
+        margin-top: 10px;
+        width: 70%;
+        display: flex;
+        align-self: center;
+    }
+
+    }
+
+    
